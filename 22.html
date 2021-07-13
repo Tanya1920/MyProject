@@ -1,0 +1,68 @@
+ <div class="order">
+                    <h1>Корзина</h1>
+                    <p class="nihil">Ваша корзина пуста.</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Наименование</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col">Цена</th>
+                                <th scope="col">Сумма</th>
+                                <th scope="col">Удалить</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" data-tovar="5711">1</th>
+                                <td>Товар 1</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">5</td>
+                                <td class="sum">50</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="3432">2</th>
+                                <td>Товар 2</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">10</td>
+                                <td class="sum">100</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-tovar="4846">3</th>
+                                <td>Товар 3</td>
+                                <td class="num">
+                                    <input type="number" value="10" pattern="^[0-9]*$">
+                                </td>
+                                <td class="rub">15</td>
+                                <td class="sum">150</td>
+                                <td class="del">
+                                    <div>+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Итого</th>
+                                <td colspan="5" class="allsum">300</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <form id="orderdata">
+                        <input type="text" id="name" placeholder="name"><br>
+                        <input type="text" id="address" placeholder="address"><br>
+                        <input type="text" id="email" placeholder="email"><br>
+                        <input type="text" id="date" placeholder="date"><br>
+                        <textarea id="comment" placeholder="comment"></textarea><br>
+                        <button type="submit">Отправить заказ</button>
+                    </form>
+                </div>

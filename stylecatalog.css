@@ -1,0 +1,454 @@
+body {
+	margin: 0;
+	font: normal 16px/20px Arial, sans-serif;
+	/*background: url("header-F.png") ;*/
+}
+.container {
+	/*max-width: 1200px;*/
+	margin-left: 0px;
+	margin-right: 0px;
+	background: white;
+	text-align: center;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+/*.container .catalog{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+} */
+.catalog {
+	display: flex;
+	gap: 8px;
+}
+.cat-blocks {
+	/*flex: 5;
+	flex: 1 1 auto;*/
+	flex: 5;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	gap: 15px;
+	margin-left: 200px;
+}
+.cat-unit {
+	height: 380px;
+	width: 400px;
+	background: pink;
+	margin-top: 40px;
+}
+
+
+header {
+    /*height: 100px;
+	background: red;*/
+}
+
+.topheader {
+	background: RGBA(39, 156, 10, 0.5);
+	height: 30 px;
+}
+
+.navigator {
+	display: flex;
+	align-items: center;
+	justify-content:  space-between;
+	height:88px;
+	
+}
+.logo {
+	display: inline-block;
+	height: 88px;
+	border-radius: 30px;
+}
+.topmenu {
+	color: white;
+	margin: 15px 30px;
+	
+}
+
+
+.Name{
+	flex: 2 ;
+
+}
+.Name > h1 {
+	/*transform: rotate(-5deg);*/
+	text-align: center;
+	/*transform: scale(2,1);*/
+}
+
+
+#yourcity {
+	cursor: pointer;
+	color: #fff;
+	padding: 5px;
+}
+.downheader {
+	 display: block;
+  position: relative;
+}
+
+.downheader::after {
+	content: "";
+  background: url(header-F.png) no-repeat;
+  	-webkit-background-size: 100%;
+	  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  opacity: 0.4;
+  
+	/*position: relative;
+    display: flex;
+	 background: url(header-F.png) no-repeat;
+	 -webkit-background-size: 100%;
+	justify-content: space-between;
+	text-align: right;
+		background: url("header-F.png");
+	height: 60px;
+	opacity: 0,4;*/
+}
+.cont {
+	position: relative;
+    justify-content: center;
+	height: 150px; 
+	margin: auto;
+	text-align: center;
+display: flex;
+}
+.img1 {
+	width: 100%;
+	height: 200px; 
+	opacity: .3;
+}
+.downheader span {
+	background: RGBA(40, 165, 10, 0.7);
+    color: #fff;
+	font-size: x-large;
+	/*position: absolute;  */
+}
+.anytext {
+	/*flex: 1 1 auto; вариант 1 */
+	/*font-weight: 700;*/
+	float: left;
+	width: 150px;
+	height: 30px;
+	text-align: left;	
+}
+.fakebutton {
+	/*border: 2px solid #fff;
+	box-sizing: border-box;
+	width: 150px;
+	text-align: center;
+	flex: 1 1 auto;
+	/*display: inline-block;*/
+	padding: 0 15px;
+	font: 700;
+	margin: 25px 10px;
+	padding: 30px 25px;
+   align-content: space-around;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+	border: 4px inset white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.fakebutton:hover {
+	/*border: 2px solid #fff;
+	box-sizing: border-box;
+	width: 150px;
+	text-align: center;
+	flex: 1 1 auto;
+	/*display: inline-block;
+	padding: 0 15px;
+	font: 700;
+	margin: 25px 10px;
+	padding: 30px 25px;
+   align-content: space-around;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+	border: 4px inset white;
+	border-radius: 10px;
+	cursor: pointer;*/
+	font: 400;
+	background: #fff;
+    color: RGBA(40, 165, 10, 0.9);
+}
+.img2 {
+	width: 100%;
+	height: 200px; 
+	opacity: .3;
+	transform: rotate(180deg);
+}
+main {
+	flex: 1 1 auto; 
+	position: relative;
+	/*height: 100px;
+	background: yellow;*/
+	flex: 1 1 auto;
+	background: #fff;
+	height: 100vh;
+	
+}
+
+.containerslaider {
+    width: 417px;
+    margin: 0 auto;
+}
+.slider {
+    position: relative;
+    width: 580px;
+    height: 600px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.slider:hover .rule {
+    display: block;
+}
+.rule span {
+   position: absolute;
+    top: calc(50% - 17px);
+    cursor: pointer; /* курсор показывает, что тут активный элемент */
+    user-select: none; /* запрещаем выделение текста - кнопка не "синеет", как по ней ни кликай*/
+    font-size: 30px;
+    width: 34px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+}
+.left {
+    left: 5%;
+}
+.right {
+    right: 5%;
+}
+
+
+
+.сenter {
+	position: relative;
+	
+	 text-align: center;
+  align-items: center;
+  
+  justify-content: center;
+  margin: 0px 20%;
+	
+}
+.flexpos{
+	display: flex;
+	width: 100%;
+	
+}
+
+aside {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	flex: 2;
+	width: 180px;
+	background: RGBA(40, 165, 10, 0.5);
+	color: #fff;
+	height: 100%;
+	float: left;
+}  
+
+
+.catmenu {
+	padding: 16px;
+}
+.catmenu_item {
+	padding: 0 20px 10px;
+	position: relative;
+}
+.catmenu_item:before {
+	content: '=>';
+	position: absolute;
+	left: 0;
+}
+.catmenu_item a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+.catmenu_item a:hover {
+	text-decoration: underline;
+}
+
+.submenu_mover {
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+.open .submenu_mover {
+	transform: rotate(180deg);
+}
+.submenu {
+	height: 0;
+	overflow: hidden;
+}
+.submenu a {
+	position: relative;
+	padding-left: 20px;
+}
+.submenu a:before {
+	content: '->';
+	position: absolute;
+	left: 0;
+}
+
+
+
+.topfooter {
+	/*height: 100px;
+	background: blue;*/
+	 display: block;
+  position: relative;
+  height: 150px;
+	
+}
+
+.topfooter::after {
+	content: "";
+  background: url(header-F.png) no-repeat;
+  transform: rotate(180deg);
+  	-webkit-background-size: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  opacity: 0.4;
+}
+.leftssilki{
+	background: rgb(148,228,197);
+	color: white;
+	display: flex;
+}
+.leftssilki > span{
+	margin-left: 88px;
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+}
+
+.line-point{
+	color: white;
+}
+
+.menupoint > span {
+	flex: 1;
+	display: none;
+	/*position: absolute;
+	top: 20px;*/
+	left: 88px;
+	padding: 5px 5px 5px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+		text-align: center;
+}
+.menupoint:hover > span,
+.menupoint > span:hover {
+	display: block;
+	
+}
+.pulldown-point{
+	background: rgb(148,228,197);
+	color: white;
+	display: block;
+	padding: 5px 6px;
+	padding: 0px;
+}
+.adress {
+	margin: 10 0 0 20;
+	padding-left: 55%;
+	flex: 2;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+.downfooter{
+	background: RGBA(39, 156, 10, 0.5);
+	height: 20px;
+}
+
+.downfooter > span{
+	margin: 0px 45%;
+}
+
+
+
+
+
+/*product*/
+.product {
+ width: 100%;
+
+}
+.catalog {
+	display: flex;
+	/*gap: 8px;*/
+}
+
+.gallery-desk {
+	width: 650px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 210px;
+}
+h1{
+	
+}
+.description{
+	
+	display: block;
+	margin-left: 0px;
+	padding-right: 10px;
+	padding-left: 930px;
+	height: 500px;
+	align-items: center;
+	text-align: center;
+	
+	
+	}
+.main-image {
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 30px;
+}
+.gallery {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
